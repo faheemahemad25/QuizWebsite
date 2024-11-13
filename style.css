@@ -1,0 +1,150 @@
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightblue;
+    /* position: relative; */
+}
+.container{
+    
+    position: absolute;  /* it moves the element*/
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); /* 📗🔖*/
+    /* -- OR --  target its parent with display: flex*/
+     /* border: 2px solid red; */
+     background-color: white; 
+    width: 40vw;
+    border-radius: 1rem;
+
+     
+}
+.inner-Container{
+    background-color: white;
+    width: 40vw;
+    /* width: 600px; */
+    /* width: 50%; */
+   /* margin: 3rem; or  */
+   padding: 3rem;
+   border-radius: 1rem;
+   box-shadow: 1px 1px 10px rgb(52, 113, 134);
+   /* border: 2px solid rgb(201, 76, 76); */
+
+   
+
+}
+
+h2, ul, button {
+       /* border: 2px solid rgb(115, 5, 5); */
+
+}
+
+.inner-Container h2 {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+   
+}
+
+.inner-Container ul{
+    margin-bottom: 2rem;
+}
+
+.inner-Container li {
+    margin-bottom: 1rem;
+    list-style: none; /*📗🔖 li bullet remove we have list-style: none; property. */
+}
+
+.inner-Container li input {
+    cursor: pointer;
+}
+
+#subBtn, #againBtn{
+   padding: 0.7rem 2rem;
+   /* padding: 1st Top-bottom     2nd leftright; */
+     border-radius: 1rem;
+     background-color: rgb(62, 181, 181);
+     font-weight: 700;
+     color: white;
+     border: none;
+     
+    display: block; /*📗🔖 Center Element : the element behave as a block-level element, meaning it takes up the full width available and starts on a new line by default. */
+    margin: auto; /*📗🔖 this proprty applies equal margins on both the left and right sides of the element, effectively centering it horizontally within its parent container. */
+
+    /* display: flex;
+    justify-content: center; */
+
+    text-transform: uppercase;
+
+}
+
+#subBtn:hover{
+    background-color: rgb(21, 130, 130);
+}
+
+.scoreAreaDsgn{ /* ------------ Dynamic element 's class. dynamic element will be created in future only then it applies. -----------*/
+
+    background-color: rgba(223, 221, 221, 0.415);
+    color: black;
+    width: 30vw;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 2rem;
+    box-shadow: 1px 1px 10px rgb(52, 113, 134);   
+    margin: auto; /*  center the div  */
+}
+
+.scoreAreaDsgn p {
+    margin-bottom: 1rem;
+}
+
+.scoreAreaANDMessage{  /* ------------ Dynamic element 's innerHTML or their parent It is only always HARD CODED📗🔖. where dynamic div appened or innerHTML.  -----------*/
+
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+} 
+
+.passDsgn{ /* ------------ Dynamic element 's class. dynamic element will created in future only then it applies. -----------*/
+    background-color:rgb(14, 160, 14);
+    color: white;
+    font-weight: 450;
+    padding: 5px;
+}
+
+.failDsgn{ /* ------------ Dynamic element 's class. dynamic element will created in future only then it applies. -----------*/
+    background-color: rgb(196, 27, 27);
+    color: white;
+    font-weight: 450;
+    padding: 5px;
+
+}
+
+/* ======================================================================================
+                                    media query
+ ===================================================================================== */
+
+
+ @media screen and (max-width:450px){
+  
+    .container{
+      width: 90vw;
+      height: 85vh;
+     
+   }
+   .inner-Container{
+    width: 100%;
+    height: 100%;
+   }
+   .scoreAreaANDMessage{
+    width: 100%;
+   }
+   .scoreAreaDsgn{
+    width: 100%;
+   }
+ }

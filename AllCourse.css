@@ -1,0 +1,70 @@
+/* Course card */
+body{
+    background-color: lightblue;
+}
+
+:root{
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+}
+
+#head{
+
+    background-color: #183b56;
+    text-align: center;
+    padding-block: 0.7rem;
+    color: white;
+    border-radius: 1rem;
+    margin: 1rem 0.5rem;
+}
+.course-Container{
+    /* border: 2px solid red; */
+    padding: 0.8rem;
+
+}
+.course-inner-Container{
+    /* border: 2px solid rgb(76, 236, 37); */
+    display: flex;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+
+
+}
+.CourseCard{
+    background-color: #577592;
+    width: 15vw;
+    text-align: center;
+    /* border: 2px solid rgb(158, 158, 158); */
+    margin: 0.3rem;
+    padding: 1rem;
+    box-shadow: 1px 1px 5px rgb(252, 252, 252);
+    border-radius: 1rem;
+}
+.CourseCard p span {
+    text-decoration: line-through;
+}
+
+button{
+    background-color: #C1E1C1;
+    border-radius: 5px;
+}
+
+/* ======================================================================================
+                                    media query
+ ===================================================================================== */
+
+
+ @media screen and (max-width:450px){
+  
+    .course-inner-Container{
+        width: 85vw;
+        /* border: 2px solid goldenrod; */
+    }
+    .CourseCard{
+        width: 100%;
+    }
+
+
+ }
