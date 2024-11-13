@@ -7,7 +7,7 @@
 ⚡️ Multiple Domain Quiz\
 ⚡️ Responsive
 ⚡️ Pass in green color msg\
-⚡️ Pass in red color msg\
+⚡️ Fail in red color msg\
 
 
 ## Tools Used 🛠️
