@@ -9,9 +9,14 @@ body{
     --accent-color: #2294ed;
     --accent-color-dark: #1d69a3;
 }
+.headerContainer{
+    /* border: 2px solid rgb(76, 236, 37); */
+    display: flex;
+    justify-content: center;
 
+}
 #head{
-
+    width: 80vw;
     background-color: #183b56;
     text-align: center;
     padding-block: 0.7rem;
@@ -25,9 +30,11 @@ body{
 
 }
 .course-inner-Container{
+    width: 80vw;
+    margin: auto;
     /* border: 2px solid rgb(76, 236, 37); */
     display: flex;
-    /* justify-content: center; */
+    /* justify-content: space-evenly; */
     flex-wrap: wrap;
 
 
@@ -35,12 +42,16 @@ body{
 .CourseCard{
     background-color: #577592;
     width: 15vw;
+    /* flex: 1; */
     text-align: center;
     /* border: 2px solid rgb(158, 158, 158); */
     margin: 0.3rem;
     padding: 1rem;
     box-shadow: 1px 1px 5px rgb(252, 252, 252);
     border-radius: 1rem;
+}
+.CourseCard:hover{
+    transform: translateY(-5px);
 }
 .CourseCard p span {
     text-decoration: line-through;
@@ -51,9 +62,17 @@ button{
     border-radius: 5px;
     padding:5px;
 }
-.DiscountOff{
-    color: rgb(238, 55, 55);
+button:hover{
+    box-shadow: 2px 2px 5px 0 var(--primary-text-color);
 }
+button:active{
+    transform: scale(0.9);
+}
+.DiscountOff{
+    color: rgb(2, 2, 159);
+    font-weight: bold;
+}
+
 /* ======================================================================================
                                     media query
  ===================================================================================== */
