@@ -17,7 +17,7 @@ body{
 }
 #head{
     width: 80vw;
-    background-color: #183b56;
+    background-color: var(--primary-text-color);
     text-align: center;
     padding-block: 0.7rem;
     color: white;
@@ -52,7 +52,12 @@ body{
 }
 .CourseCard:hover{
     transform: translateY(-5px);
+    background-color: #325c7c;
+    h3{
+        color: white;
+    }
 }
+
 .CourseCard p span {
     text-decoration: line-through;
 }
